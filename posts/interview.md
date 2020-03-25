@@ -64,10 +64,6 @@
 
 ### css 动画
 
-###
-
-###
-
 promise 实现一下
 
 new object.create 等
