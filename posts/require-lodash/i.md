@@ -34,7 +34,9 @@ console.log(isEqual(NaN, NaN));
 
 build 后如下：
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/197018/1585807417167-a5708610-4720-4187-aada-0dce04a6c093.png#align=left&display=inline&height=69&name=image.png&originHeight=138&originWidth=691&size=29525&status=done&style=none&width=345.5) 可以看到，都是 72 kb。
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/197018/1585807417167-a5708610-4720-4187-aada-0dce04a6c093.png#align=left&display=inline&height=69&name=image.png&originHeight=138&originWidth=691&size=29525&status=done&style=none&width=345.5) 
+
+可以看到，都是 72 kb。
 
 ## 具体文件引入
 
@@ -65,7 +67,9 @@ import throttle from 'lodash/throttle';
 
 这样就写了很多重复的代码，明显没有解构写方便：`import { isEqual, chunk, debounce, throttle } from 'lodash';`  当然  Lodash 这么牛逼的库不可能想不到这个问题，所以有  babel-plugin-lodash 可以使用，它做的就是一些代码转换，如下：
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/197018/1585808819405-11cc8433-d028-4f29-af95-7be1edcfa35b.png#align=left&display=inline&height=428&name=image.png&originHeight=856&originWidth=762&size=78861&status=done&style=none&width=381) 这个  babel 插件可以让以上 2 种方式都转成 文件引入。棒棒，我们来试一下：
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/197018/1585808819405-11cc8433-d028-4f29-af95-7be1edcfa35b.png#align=left&display=inline&height=428&name=image.png&originHeight=856&originWidth=762&size=78861&status=done&style=none&width=381) 
+
+这个  babel 插件可以让以上 2 种方式都转成 文件引入。棒棒，我们来试一下：
 
 ```javascript
 // four.js
