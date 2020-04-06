@@ -2,7 +2,7 @@
 
 Lodash 是我们很常用的一个库（npm 周下载量是 2.8 亿次，react 是 0.8 亿次，webpack 是 1.1 亿次），但很多人引入  Lodash 并不优雅（打包后的体积过大），本文就带大家来看看  Lodash 常用的几种引入方式。
 
-先写结论，想看细节的话，可以继续。
+先写结论，想看细节的话，可以继续。本文所有的代码都在[这个仓库](https://github.com/Acmu/require-lodash-demo)中。
 
 ## 结论
 
